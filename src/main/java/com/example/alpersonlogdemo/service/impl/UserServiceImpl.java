@@ -30,6 +30,7 @@ public class UserServiceImpl implements UserService {
           return userMapper.toDto(saveUser);
     }
 
+
     @Override
     public UserResponseDTO getUserById(Long id) {
         UserEntity user = userRepository.findById(id).orElseThrow(()-> new ResourceAccessException("İstifadəçi tapılmadı id:" +id));

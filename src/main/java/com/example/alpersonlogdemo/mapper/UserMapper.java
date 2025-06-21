@@ -31,6 +31,7 @@ public class UserMapper {
         if(user ==null)
             return null;
 
+
         return UserResponseDTO.builder()
                 .id(user.getId())
                 .fullName(user.getFullName())
